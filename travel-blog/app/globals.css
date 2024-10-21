@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #88cff8;
+  --foreground: #305230;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +17,17 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-mono);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+h2 {
+  color: var(--foreground);
+  text-align: center;
+  font-family: var(--font-geist-mono);
 }
