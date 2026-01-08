@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L, { Polyline } from 'leaflet';
 import { useEffect, useState } from 'react';
-import iconImg from '/images/luggage.png';
+import { lusitana } from '@/app/ui/fonts';
 
 // Fixes default icon issue in Leaflet with Webpack (Next.js)
 L.Icon.Default.mergeOptions({
@@ -51,7 +51,7 @@ export default function MapPage({ locations }: MapProps) {
         {locations.map((location, index) => (
           <Marker riseOnHover={true} key={index} position={[location.latitude, location.longitude]} icon=
           {new L.Icon({
-            iconUrl: "/images/luggage.png",
+            iconUrl: "/luggage.png",
             iconSize: [32, 32],
           })}>
             <Popup>{location.name}</Popup>
@@ -65,7 +65,7 @@ export default function MapPage({ locations }: MapProps) {
             <li key={index}>
               <a
           href="#"
-          className="text-lg text-blue-600 hover:underline"
+          className={`${lusitana.className} text-xl text-green-800 md:text-3xl md:leading-normal`}
               >
           {location.name}
               </a>
