@@ -8,12 +8,12 @@ export default function Welcome() {
           <h2 className="text-6xl text-center">Welcome to Our Travel Blog</h2>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row justify-center">
-          <a className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-lg py-5 px-8" href="/plan">
+          <Link className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-lg py-5 px-8" href="/trips/create">
             Plan a trip
-          </a>
-          <a className="rounded-full border border-solid border-black/[.5] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-lg py-5 px-8" href="/view">
+          </Link>
+          <Link className="rounded-full border border-solid border-black/[.5] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-lg py-5 px-8" href="/trips/view">
             View a trip
-          </a>
+          </Link>
         </div>
       </main>
     </div>
